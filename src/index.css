@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #00d4ff22 transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 4px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #00d4ff44;
+  border-radius: 2px;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #050b1a;
+  color: #e2e8f0;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.glass-strong {
+  background: rgba(0, 212, 255, 0.04);
+  backdrop-filter: blur(24px);
+  border: 1px solid rgba(0, 212, 255, 0.12);
+}
+
+.neon-blue { color: #00d4ff; text-shadow: 0 0 20px #00d4ff88; }
+.neon-green { color: #39ff14; text-shadow: 0 0 20px #39ff1488; }
+.neon-red { color: #ff4444; text-shadow: 0 0 20px #ff444488; }
+
+.glow-blue { box-shadow: 0 0 20px #00d4ff22, 0 0 40px #00d4ff11; }
+.glow-green { box-shadow: 0 0 20px #39ff1422; }
+.glow-red { box-shadow: 0 0 20px #ff444422; }
+
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(0, 212, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 212, 255, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+@keyframes pulse-neon {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+.animate-pulse-neon { animation: pulse-neon 2s ease-in-out infinite; }
+
+.recharts-cartesian-grid line { stroke: rgba(255,255,255,0.05) !important; }
+.recharts-text { fill: #64748b !important; font-size: 11px !important; }
