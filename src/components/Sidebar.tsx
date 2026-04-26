@@ -39,8 +39,7 @@ function SidebarContent({ active, onNavigate, onClose, showClose }: {
             <Zap size={16} className="neon-blue" />
           </div>
           <div>
-            <span className="font-bold text-sm tracking-wide text-white">5G</span>
-            <span className="font-bold text-sm tracking-wide neon-blue"> SECURE</span>
+            <span className="font-bold text-sm tracking-wide text-white"> SPECTRA</span>
           </div>
         </div>
         {showClose && (
